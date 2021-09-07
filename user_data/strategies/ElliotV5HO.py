@@ -222,7 +222,7 @@ def populate_indicators(self, dataframe: DataFrame, metadata: dict) -> DataFrame
     return dataframe
 
 
-class ElliotV5(IStrategy):
+class ElliotV5HO(IStrategy):
     INTERFACE_VERSION = 2
 
     # # ROI table:

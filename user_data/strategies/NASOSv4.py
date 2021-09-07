@@ -1,3 +1,6 @@
+# for live trailing_stop = False and use_custom_stoploss = True
+# for backtest trailing_stop = True and use_custom_stoploss = False
+
 # --- Do not remove these libs ---
 # --- Do not remove these libs ---
 from logging import FATAL
@@ -118,7 +121,7 @@ class NASOSv4(IStrategy):
                              space='sell', optimize=False, load=True)
 
     # Trailing stop:
-    trailing_stop = False
+    trailing_stop = True
     trailing_stop_positive = 0.001
     trailing_stop_positive_offset = 0.016
     trailing_only_offset_is_reached = True
